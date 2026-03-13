@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="email.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div id="container">
+            <div class="containermodle1">
+                <header>
+                    <h1>Email.js</h1>
+                    <h2>About:</h2>
+                    <p>
+                        I,am using to makeing the skile :Html,css,bootstrap and javascripte.
+                        <br>
+                        This project using too your expecte. Email sending methard.
+                    </p>
+                </header>
+                <nav>
+                    <h12>Help</h2>
+                        <li>Enter your Name</li>
+                        <li>Enter your Subject </li>
+                        <li>Enter your Message</li>
+                        <li>Enter your current a correct Email ID </li>
+                        <li>Click to send button. </li>
+                        <p>Fine. Open your Gmail. </p>
+                </nav>
+            </div>
+            <div class="containermodle2">
+                <div class="main">
+                    <form id="form">
+                        <div class="field">
+                            <label for="to_name">Name:</label>
+                            <input type="text" name="to_name" id="to_name">
+                        </div>
+                        <div class="field">
+                            <label for="message">Subject:</label>
+                            <input type="text" name="Subject" id="Email">
+                        </div>
+                        <div class="field">
+                            <label for="Email">Email:</label>
+                            <input type="email" name="Email" id="mw">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message:</label>
+                            <textarea name="message" placeholder="Message" id="Subject"></textarea>
+                        </div>
+                        <button type="submit" id="button" class="btn btn-primary">Send Email</button>
+                        <!-- <input type="submit"  value="" > -->
+                    </form>
+                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                    <script>
+                        emailjs.init('ftxieXENIAhHzWGpx')
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="email.js"></script>
+</body>
+
+</html>
